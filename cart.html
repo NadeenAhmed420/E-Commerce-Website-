@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <div class="container">
+          <div class="contact">
+            <span>(+01) - 2543 - 1025</span>
+            <span>Our Location</span>
+          </div>
+          <p class="alert-news m-0">
+            super value deals - save more with cupons
+          </p>
+          <a href="login.html" class="action">Log In / Sign In</a>
+        </div>
+      </div>
+      <!-- header-top -->
+      <nav class="navbar navbar-expand-lg py-2">
+        <div class="container">
+          <div class="logo mb-3 me-5">
+            <img src="images/logo.svg" alt />
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="account.html">Account</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="compare.html">Compare</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+
+            <div class="search position-relative mt-4">
+              <input type="text" name="search" placeholder="Search For Items" />
+              <button class="border-0 bg-transparent">
+                <img src="images/search.png" alt />
+              </button>
+            </div>
+            <!-- search -->
+
+            <div class="icons">
+              <a class="position-relative" href="wishlist.html">
+                <img src="images/icon-heart.svg" alt />
+                <span class="count">3</span>
+              </a>
+              <a class="position-relative" href="cart.html">
+                <img src="images/icon-cart.svg" alt />
+                <span class="count">2</span>
+              </a>
+            </div>
+            <!-- icons -->
+          </div>
+        </div>
+        <!-- container -->
+      </nav>
+    </header>
+
+    <main>
+      <section class="breadcrumb p-4">
+        <div class="container">
+          <ul class="d-flex gap-3">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">></a></li>
+            <li><a href="index.html">Shop</a></li>
+            <li><a href="index.html">></a></li>
+            <li><a href="index.html">Cart </a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cart pb-5">
+        <div class="container">
+          <div class="overflow-x-auto">
+            <table class="table">
+              <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quuantity</th>
+                <th>Subtotal</th>
+                <th>Remove</th>
+              </tr>
+              <!--head  -->
+   <tbody class="text-center">
+    <tr>
+      <td>
+        <img src="images/product-8-1.jpg" class="table-img" alt="" />
+      </td>
+
+      <td>
+        <h3 class="table-title">Lorem, ipsum dolor sit ametamet</h3>
+        <p class="table-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Neque, nulla.
+        </p>
+      </td>
+
+      <td class="table-price">
+        <span>$110</span>
+      </td>
+      <td>
+        <input type="number" value="2" class="quantity" />
+      </td>
+      <td class="table-subtotal">
+        <span>$320</span>
+      </td>
+      <td class="table-remove">
+        <span class="material-symbols-outlined"> delete </span>
+      </td>
+    </tr>
+    <!-- tr-1 -->
+    <tr>
+      <td>
+        <img src="images/product-9-2.jpg" class="table-img" alt="" />
+      </td>
+
+      <td>
+        <h3 class="table-title">Lorem, ipsum dolor sit ametamet</h3>
+        <p class="table-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Neque, nulla.
+        </p>
+      </td>
+
+      <td class="table-price">
+        <span>$110</span>
+      </td>
+      <td>
+        <input type="number" value="2" class="quantity" />
+      </td>
+      <td class="table-subtotal">
+        <span>$320</span>
+      </td>
+      <td class="table-remove">
+        <span class="material-symbols-outlined"> delete </span>
+      </td>
+    </tr>
+    <!-- tr-2 -->
+    <tr>
+      <td>
+        <img src="images/product-5-2.jpg" class="table-img" alt="" />
+      </td>
+
+      <td>
+        <h3 class="table-title">Lorem, ipsum dolor sit ametamet</h3>
+        <p class="table-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Neque, nulla.
+        </p>
+      </td>
+
+      <td class="table-price">
+        <span>$110</span>
+      </td>
+      <td>
+        <input type="number" value="2" class="quantity" />
+      </td>
+      <td class="table-subtotal">
+        <span>$320</span>
+      </td>
+      <td class="table-remove">
+        <span class="material-symbols-outlined"> delete </span>
+      </td>
+    </tr>
+    <!-- tr-3 -->
+    <tr>
+      <td>
+        <img src="images/product-11-1.jpg" class="table-img" alt="" />
+      </td>
+
+      <td>
+        <h3 class="table-title">Lorem, ipsum dolor sit ametamet</h3>
+        <p class="table-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Neque, nulla.
+        </p>
+      </td>
+
+      <td class="table-price">
+        <span>$110</span>
+      </td>
+      <td>
+        <input type="number" value="2" class="quantity" />
+      </td>
+      <td class="table-subtotal">
+        <span>$320</span>
+      </td>
+      <td class="table-remove">
+        <span class="material-symbols-outlined"> delete </span>
+      </td>
+    </tr>
+    <!-- tr-4 -->
+   </tbody>
+            </table>
+
+            <div class="table-cart d-flex justify-content-end gap-3">
+              <a
+                href=""
+                class="btn-small rounded-2 d-flex align-items-center gap-2 py-2 px-3"
+              >
+                <span class="material-symbols-outlined"> shuffle </span>
+                Update Cart
+              </a>
+              <a
+                href=""
+                class="btn-small rounded-2 d-flex align-items-center gap-2 py-2 px-3"
+              >
+                <span class="material-symbols-outlined"> shopping_bag </span>
+                Continue Shopping
+              </a>
+            </div>
+          </div>
+
+          <div class="divider">
+            <span class="material-symbols-outlined text-success"> atr </span>
+          </div>
+
+          <div class="cart-group pb-4">
+            <div class="row">
+              <div class="col-md-6 col-lg-6">
+                <div>
+                  <div class="cart-shipping">
+                    <h3 class="section-title">Calculate Shipping</h3>
+                    <form action="">
+                      <input
+                        type="text"
+                        placeholder="State/Country"
+                        class="form-input border mb-3 p-2 w-100"
+                      />
+                      <div class="d-flex gap-3">
+                        <input
+                          type="text"
+                          placeholder="City"
+                          class="form-input border p-2 w-100"
+                        />
+                        <input
+                          type="text"
+                          placeholder="Postal-Code / ZIP"
+                          class="form-input border p-2 w-100"
+                        />
+                      </div>
+                      <div class="form-btn mt-4">
+                        <button
+                          class="btn-small d-flex align-items-center gap-3 py-2 px-4 border-0 rounded-2"
+                        >
+                          <span class="material-symbols-outlined">
+                            update
+                          </span>
+                          Update
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="cart-Coupon my-5">
+                    <h3 class="section-title">Apply Coupon</h3>
+                    <div class="">
+                      <form action="" class="d-flex align-items-center gap-2">
+                        <input
+                          type="text"
+                          placeholder="Enter Your Coupon"
+                          class="form-input border py-2 px-3 rounded-1"
+                        />
+                        <button
+                          class="d-flex gap-lg2 align-items-center btn-small py-2 px-3 border-0 rounded-2"
+                        >
+                          <span class="material-symbols-outlined">
+                            shopping_bag </span
+                          >Apply
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-lg-6">
+                <div class="cart-total p-4 rounded-2">
+                  <h3 class="section-title">Total Cart</h3>
+                  <table class="cart-total">
+                    <tr>
+                      <td>
+                        <span class="cart-total-title">Subtotal</span>
+                      </td>
+                      <td><span class="cart-total-price"> 250$ </span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="cart-total-title">Shipping</span></td>
+                      <td><span class="cart-total-price"> 30$ </span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="cart-total-title">Total</span></td>
+                      <td><span class="cart-total-price"> 280$ </span></td>
+                    </tr>
+                  </table>
+
+                  <a
+                    href="checkout.html"
+                    class="btn-small d-inline-flex align-items-center gap-2 py-2 px-3 rounded-2 mt-4"
+                  >
+                    <span class="material-symbols-outlined"> inventory </span>
+                    Proceed To Checkout
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="news-letter mb-5 p-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <h3>
+                <img src="images/icon-email.svg" class="gap-2" />
+                Sign Up To NewsLetter
+              </h3>
+            </div>
+
+            <div class="col-md-6 col-lg-6">
+              <form action="" class="d-flex justify-content-between">
+                <input type="text" placeholder="Enter Your Email" />
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer pb-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3 col-lg-4 pt-5">
+            <a href="index.html">
+              <img src="images/logo.svg" class="logo mb-3" />
+            </a>
+            <h4 class="fs-5">Contact</h4>
+            <p class="description m-0 pt-2 fw-semibold">
+              Address :
+              <span>Suez Canal Street Street 1 ,EL-Mansoura </span>
+            </p>
+            <p class="description m-0 fw-semibold">
+              Phone :
+              <span>+ 01 101 122 9484 </span>
+            </p>
+            <p class="description fw-semibold">
+              Hours :
+              <span>10:00 - 18:00 Mon - Sat </span>
+            </p>
+            <h4 class="fs-5">Follow Us</h4>
+
+            <div class="social mt-3">
+              <a href="">
+                <img src="images/icon-facebook.svg" />
+              </a>
+              <a href="">
+                <img src="images/icon-instagram.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="images/icon-twitter.svg" alt="" />
+              </a>
+              <a href="">
+                <img src="images/icon-youtube.svg" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 pt-5">
+            <h3 class="tittle fw-bold mb-2">Links</h3>
+            <div class="content">
+              <ul class="lh-lg m-0 p-0">
+                <li><a href="" class="footer-link"> HOME</a></li>
+                <li><a href="" class="footer-link">Delivery Information</a></li>
+                <li><a href="" class="footer-link">Privacy&Policy</a></li>
+                <li><a href="" class="footer-link">Terms&Conditions</a></li>
+                <li><a href="" class="footer-link">Support Center</a></li>
+                <li><a href="" class="footer-link">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-2 pt-5">
+            <h3 class="tittle fw-bold mb-2">My Account</h3>
+            <div class="content m-auto">
+              <ul class="lh-lg m-0 p-0">
+                <li><a href="" class="footer-link"> Sign In</a></li>
+                <li><a href="" class="footer-link">View Cart</a></li>
+                <li><a href="" class="footer-link">My WishList</a></li>
+                <li><a href="" class="footer-link">Track My Order</a></li>
+                <li><a href="" class="footer-link">New Order</a></li>
+                <li><a href="" class="footer-link">Help</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3 col-lg-4 pt-5">
+            <h3 class="tittle fw-bold mb-2 ms-lg-auto">Contact Us</h3>
+            <div class="content">
+              <p class="pb-2">
+                Get in touch with us via mail phone.We are waiting for your call
+                or message
+              </p>
+              <a class="store-link px-lg-3 px-2 py-2 rounded-2" href="#"
+                >Evana@gmail.com</a
+              >
+
+              <p class="description fs-6 fw-bold mt-5">
+                Secured Payment Gateways
+              </p>
+              <img src="images/payment-method.png" class="mt-2" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom mt-4 text-center">
+          <p class="text-black-50 m-0">&copy; 2024 Evana All rights Reserved</p>
+          <p>
+            Designed By
+            <span class="copy-rights fw-semibold"> "Nadeen Ahmed"</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+   
+    
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+  </body>
+</html>
