@@ -1,26 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;500;600&family=Outfit:wght@300;400;600&family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap");
 /* Global VARIABLES  */
-.slick-prev,
-.slick-next {
-  position: relative;
-  background-color: var(--border-color-alt);
-  color: var(--first-color);
-  border: none;
-  font-size: 20px;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-}
-.slick-prev {
-  position: absolute;
-  z-index: 99999999999;
-  left: -40px;
-}
-.slick-next {
-  position: absolute;
-  z-index: 99999999999;
-  right: 40px;
-}
 
 :root {
   --header-height: 4rem;
@@ -108,6 +87,11 @@
   .d-none {
     display: none;
   }
+  @media (max-width: 576px) {
+    .d-none-small {
+      display: none !important;
+    }
+  }
   .pink {
     background-color: hsl(341, 100%, 73%);
   }
@@ -121,29 +105,7 @@
   .blue {
     background-color: hsl(202, 53%, 76%);
   }
-  /*=============== Media Query ===============*/
-  /* For large devices */
-  /* @media screen and (max-width: 1400px) {
-  }
-
-  @media screen and (max-width: 1200px) {
-  } */
-
-  /* For medium devices */
-  /* @media screen and (max-width: 992px) {
-  }
-
-  @media screen and (max-width: 768px) {
-  } */
-
-  /* For small devices */
-  /* @media screen and (max-width: 576px) {
-  }
-
-  @media screen and (max-width: 350px) {
-  } */
 }
-
 /* Start of Header  */
 .header-top {
   background-color: var(--first-color-alt);
@@ -271,6 +233,12 @@
   word-spacing: 3px;
   letter-spacing: 2px;
 }
+@media (max-width: 768px) {
+  .home h1 span {
+    font-size: var(--h2-font-size);
+    letter-spacing: 0px;
+  }
+}
 .home .btn {
   background-color: var(--first-color);
   color: var(--body-color);
@@ -295,7 +263,12 @@
 }
 .categories .content {
   border: 1px solid var(--border-color);
-  margin-left: 20px;
+  margin-right: 20px;
+}
+@media (max-width: 767px) {
+  .categories .content {
+    margin-right: 0px;
+  }
 }
 .categories .content h4 {
   font-size: var(--small-font-size);
@@ -343,6 +316,14 @@
   font-weight: var(--weight-600);
   padding: 10px 15px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .products .p-btn {
+    padding: 3px 15px;
+  }
 }
 .products .p-btn.active {
   background-color: var(--second-color);
@@ -599,13 +580,18 @@
 }
 .news-letter img {
   width: 35px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .news-letter h3 {
   font-size: var(--h4-font-size);
   color: var(--title-color);
   font-family: var(--second-font);
   letter-spacing: 1px;
+}
+@media (max-width: 576px) {
+  .news-letter h3 {
+    font-size: 20px;
+  }
 }
 
 .news-letter input {
@@ -717,6 +703,17 @@ footer .tittle {
 .details-small-img:nth-child(3) {
   margin-left: 80px !important;
 }
+@media (max-width: 576px) {
+  .details-small-img:nth-child(1) {
+    margin-left: 20px !important;
+  }
+  .details-small-img:nth-child(2) {
+    margin-left: 40px !important;
+  }
+  .details-small-img:nth-child(3) {
+    margin-left: 60px !important;
+  }
+}
 .group-images img {
   cursor: pointer;
   background-color: #008000;
@@ -825,11 +822,11 @@ footer .tittle {
 .review-data {
   font-size: var(--small-font-size);
 }
-.group {
+/* .group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-}
+} */
 textarea {
   height: 200px;
   resize: none;
@@ -924,19 +921,8 @@ textarea {
 }
 
 .divider {
-  position: relative;
   margin-block: 3rem;
   text-align: center;
-}
-
-.divider::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 50%;
-  width: 100%;
-  height: 1px;
-  background-color: var(--text-color-light);
 }
 
 /* /////////////////////// */
@@ -959,6 +945,14 @@ textarea {
 .cart-total-price {
   font-weight: var(--weight-600);
   color: var(--first-color);
+}
+@media (max-width: 576px) {
+  .cart .cart-Coupon input {
+    width: 100%;
+  }
+  .cart .cart-Coupon button {
+    margin-top: 10px;
+  }
 }
 /*END CART PAGE + WISHLIST */
 /* //////////////////////////// */
@@ -1093,3 +1087,24 @@ textarea {
 }
 
 /* END ACCOOUNT PAGE */
+.slick-prev,
+.slick-next {
+  position: relative;
+  background-color: var(--border-color-alt);
+  color: var(--first-color);
+  border: none;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.slick-prev {
+  position: absolute;
+  z-index: 99999999999;
+  left: -40px;
+}
+.slick-next {
+  position: absolute;
+  z-index: 99999999999;
+  right: 40px;
+}
